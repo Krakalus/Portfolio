@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anantha Shakthi Ganeshan Thevar - Resume</title>
+    <title>Anantha Shakthi Ganeshan Thevar - Portfolio</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -30,11 +30,11 @@
             color: #34495e;
             border-bottom: 2px solid #3498db;
             padding-bottom: 8px;
-            margin-top: 30px;
+            margin-top: 0px;
         }
         h3 {
-            font-size: 18px;
-            margin: 15px 0 8px;
+            font-size: 20px;
+            margin: 20px 0 10px;
             color: #2980b9;
         }
         p {
@@ -56,48 +56,127 @@
             color: #7f8c8d;
             margin-top: 10px;
         }
-        .section {
-            margin-bottom: 40px;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
         .project {
-            margin-bottom: 25px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 15px 0;
         }
         .links {
-            font-size: 14px;
-            margin-top: 5px;
-        }
-        @media print {
-            body { background: white; margin: 0; padding: 20px; }
-            a { color: inherit; }
+            margin-top: 10px;
+            font-size: 15px;
         }
     </style>
 </head>
 <body>
-
     <header>
         <h1>ANANTHA SHAKTHI GANESHAN THEVAR</h1>
         <p class="contact">
-            Self-Taught AI & Decentralized Systems Builder<br>
-            anantha.shakthiganeshanthevar@gmail.com | Chennai, India (Open to Relocation to San Francisco)<br>
-            LinkedIn: <a href="https://in.linkedin.com/in/asg-thevar-65a766229">https://in.linkedin.com/in/asg-thevar-65a766229</a> |
-            GitHub: <a href="https://github.com/Krakalus">https://github.com/Krakalus</a> |
-            Itch.io: <a href="https://krakalus.itch.io/">https://krakalus.itch.io/</a>
+            Self-Taught AI & Mechanistic Interpretability Builder<br>
+            ananthashakthiganeshanofficial@gmail.com | Chennai, India<br>
+            LinkedIn: <a href="https://in.linkedin.com/in/asg-thevar-65a766229">linkedin.com/in/asg-thevar-65a766229</a> |
+            GitHub: <a href="https://github.com/Krakalus">github.com/Krakalus</a> |
+            Itch.io: <a href="https://krakalus.itch.io/">krakalus.itch.io/</a>
         </p>
     </header>
 
-    <div class="section">
+    <!-- Summary Section -->
+    <div class="project">
         <h2>Summary</h2>
-        <p>Self-taught AI builder passionate about agentic systems, multimodal tools, and AI safety. Learned entirely through hands-on prototyping guided by Grok (xAI) and YouTube tutorials. Co-authored <strong>TrustNet</strong> (Apart Research Defensive Acceleration Hackathon, Nov 2025) with <strong>Publius Dirac</strong> — a decentralized multi-dimensional trust framework that resists AI-enabled misinformation via credential proofs, Ethereum vouching, temporal aging, and EigenTrust. Simulations achieved <strong>282× trust separation</strong> (legitimate journalists: 22.56% mean vs. Sybils: 0.08%), raising coordinated attack costs to >$100k. Driven to contribute originality and rapid iteration to OpenAI's frontier research on safe AGI.</p>
+        <p>Self-taught AI builder passionate about agentic systems, multimodal tools, and AI safety. Learned entirely through hands-on prototyping guided by Grok (xAI) and YouTube tutorials. Co-authored <strong>TrustNet</strong> (Apart Research Defensive Acceleration Hackathon, Nov 2025) with <strong>Publius Dirac</strong> — a decentralized multi-dimensional trust framework that resists AI-enabled misinformation via credential proofs, Ethereum vouching, temporal aging, and EigenTrust. Simulations achieved <strong>282× trust separation</strong> (legitimate journalists: 22.56% mean vs. Sybils: 0.08%), raising coordinated attack costs to >$100k. Recently entered mechanistic interpretability by discovering a steerable therapeutic empathy circuit in LLMs for Neel Nanda's MATS application. Driven to contribute originality and rapid iteration to safe AGI research.</p>
     </div>
 
-    <div class="section">
+    <h2>Projects</h2>
+
+    <!-- NEW MATS PROJECT - TOP -->
+    <div class="project">
+        <h3>Probing & Steering Therapeutic Empathy Circuits in LLMs (Mechanistic Interpretability)</h3>
+        <p><em>Neel Nanda MATS 10.0 Application Research Task • Jan 2026</em></p>
+        <ul>
+            <li>Discovered a highly linear Theory of Mind sub-circuit for therapeutic empathy vs. faux pas in Qwen2.5-7B-Instruct using transformer-lens.</li>
+            <li>Achieved perfect linear probe accuracy (1.000) from layer 8; steering vector (norm 23.2) flipped 100% of faux pas activations to empathetic at ≥10× strength.</li>
+            <li>Tied to ToM literature (Strachan et al. 2024 Nature Human Behaviour; Poglitsch et al. 2025 Scientific Reports) for safety/autism applications.</li>
+            <li>Self-taught mech interp in ~16 hours from zero prior experience.</li>
+        </ul>
+        <p class="links">
+            Repo & Code → <a href="https://github.com/Krakalus/MATS-Research-work">github.com/Krakalus/MATS-Research-work</a><br>
+            Write-up → <a href="https://docs.google.com/document/d/1lDyR0PN3ZgplBqsML4iHil4fbPAarDr3LsGi1me7TAs/edit">Google Doc</a><br>
+            Modal Notebooks → <a href="https://modal.com/notebooks/mckinseyscott19/main/nb-8zvT866rOnHVTx11CtrxJT">Final Run</a>
+        </p>
+    </div>
+
+    <!-- TrustNet Project -->
+    <div class="project">
+        <h3>TrustNet: Multi-Dimensional Trust for Misinformation Resistance</h3>
+        <p><em>Apart Research Defensive Acceleration Hackathon • Nov 2025</em></p>
+        <ul>
+            <li>Co-authored and contributed to implementation of decentralized reputation system modeling trust as weighted vector:<br>
+                <strong>Trust(a) = 0.25·X(a) [Credentials] + 0.35·P(a) [Vouching] + 0.15·Tₜ(a) [Age] + 0.25·G(a) [EigenTrust]</strong></li>
+            <li>Integrated Aqua Protocol proofs, EIP-191 signatures, temporal decay, and modified EigenTrust (α=0.2) to isolate Sybil clusters.</li>
+            <li>Simulations (10 legit vs. 20 Sybils): <strong>282× separation</strong>, legitimate mean 22.56% vs. Sybil 0.08%.</li>
+            <li>Node.js CLI with JSON ledger; open-source prototype.</li>
+        </ul>
+        <p class="links">
+            Paper → <a href="https://apartresearch.com/project/economic-finality-for-attested-journalism-multidimensional-trust-for-misinformation-resistance-m88z">Apart Research Page</a><br>
+            Repo → <a href="https://github.com/rht/apart_attested_journalism">github.com/rht/apart_attested_journalism</a><br>
+            Demo → <a href="https://rht.github.io/apart_attested_journalism/">rht.github.io/apart_attested_journalism/</a>
+        </p>
+    </div>
+
+    <!-- Agentic Angry Birds Clone -->
+    <div class="project">
+        <h3>Agentic Angry Birds Clone</h3>
+        <p><em>Kiroween Hackathon • 2025 • Playable Browser Game</em></p>
+        <ul>
+            <li>Developed an autonomous agent-based Angry Birds clone with intentional "wacky" physics and behavior to explore AI development challenges.</li>
+            <li>Built using Kiro (AI-powered IDE); README documents struggles with Kiro's overcomplexity and lessons on steering AI tools effectively.</li>
+            <li>Fully client-side, deployed for instant play — showcases rapid prototyping and creative problem-solving.</li>
+        </ul>
+        <p class="links">
+            Play → <a href="https://krakalus.github.io/Agentic-Angry-Birds-Clone/">krakalus.github.io/Agentic-Angry-Birds-Clone/</a><br>
+            Itch.io Profile → <a href="https://krakalus.itch.io/">krakalus.itch.io/</a>
+        </p>
+    </div>
+
+    <!-- CRM InsightForge -->
+    <div class="project">
+        <h3>CRM InsightForge: Autonomous CRM Agent</h3>
+        <p><em>NVIDIA-AWS Agentic AI Hackathon • 2025</em></p>
+        <ul>
+            <li>Prototyped agent using Llama-3.1-Nemotron, Retrieval NIMs, LangGraph, and FAISS for real-time reasoning over CRM data and external APIs (e.g., NASA).</li>
+            <li>Deployed on AWS SageMaker with focus on safe autonomy.</li>
+        </ul>
+    </div>
+
+    <!-- Multimodal Shopify AI Tool -->
+    <div class="project">
+        <h3>Multimodal Shopify AI Tool</h3>
+        <p><em>Independent Project • 2025</em></p>
+        <ul>
+            <li>Streamlit app leveraging Groq/OpenAI vision models (llama-3.2-90b-vision) to generate product descriptions from uploaded images/text.</li>
+            <li>Deployed on Streamlit Cloud for user-friendly interaction.</li>
+        </ul>
+    </div>
+
+    <!-- Mixture-of-Experts Model Deployment -->
+    <div class="project">
+        <h3>Mixture-of-Experts Model Deployment</h3>
+        <p><em>Independent Sprint • 2025</em></p>
+        <ul>
+            <li>Fine-tuned and deployed MoE architecture on Hugging Face for efficient edge inference.</li>
+        </ul>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="project">
         <h2>Skills</h2>
-        <div class="skills-grid">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
             <div>
                 <h3>AI & Safety</h3>
                 <ul>
@@ -138,68 +217,8 @@
         </div>
     </div>
 
-    <div class="section">
-        <h2>Projects & Hackathons</h2>
-
-        <div class="project">
-            <h3>TrustNet: Multi-Dimensional Trust for Misinformation Resistance</h3>
-            <p><em>Apart Research Defensive Acceleration Hackathon • Nov 2025</em></p>
-            <ul>
-                <li>Co-authored and contributed to implementation of decentralized reputation system modeling trust as weighted vector:<br>
-                    <strong>Trust(a) = 0.25·X(a) [Credentials] + 0.35·P(a) [Vouching] + 0.15·Tₜ(a) [Age] + 0.25·G(a) [EigenTrust]</strong></li>
-                <li>Integrated Aqua Protocol proofs, EIP-191 signatures, temporal decay, and modified EigenTrust (α=0.2) to isolate Sybil clusters.</li>
-                <li>Simulations (10 legit vs. 20 Sybils): <strong>282× separation</strong>, legitimate mean 22.56% vs. Sybil 0.08%.</li>
-                <li>Node.js CLI with JSON ledger; open-source prototype.</li>
-            </ul>
-            <p class="links">
-                Paper → <a href="https://apartresearch.com/project/economic-finality-for-attested-journalism-multidimensional-trust-for-misinformation-resistance-m88z">Apart Research Page</a><br>
-                Repo → <a href="https://github.com/rht/apart_attested_journalism">https://github.com/rht/apart_attested_journalism</a><br>
-                Demo → <a href="https://rht.github.io/apart_attested_journalism/">https://rht.github.io/apart_attested_journalism/</a>
-            </p>
-        </div>
-
-        <div class="project">
-            <h3>Agentic Angry Birds Clone</h3>
-            <p><em>Kiroween Hackathon • 2025 • Playable Browser Game</em></p>
-            <ul>
-                <li>Developed an autonomous agent-based Angry Birds clone with intentional "wacky" physics and behavior to explore AI development challenges.</li>
-                <li>Built using Kiro (AI-powered IDE); README documents struggles with Kiro's overcomplexity and lessons on steering AI tools effectively.</li>
-                <li>Fully client-side, deployed for instant play — showcases rapid prototyping and creative problem-solving.</li>
-            </ul>
-            <p class="links">
-                Play → <a href="https://krakalus.github.io/Agentic-Angry-Birds-Clone/">https://krakalus.github.io/Agentic-Angry-Birds-Clone/</a><br>
-                Itch.io Profile → <a href="https://krakalus.itch.io/">https://krakalus.itch.io/</a>
-            </p>
-        </div>
-
-        <div class="project">
-            <h3>CRM InsightForge: Autonomous CRM Agent</h3>
-            <p><em>NVIDIA-AWS Agentic AI Hackathon • 2025</em></p>
-            <ul>
-                <li>Prototyped agent using Llama-3.1-Nemotron, Retrieval NIMs, LangGraph, and FAISS for real-time reasoning over CRM data and external APIs (e.g., NASA).</li>
-                <li>Deployed on AWS SageMaker with focus on safe autonomy.</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h3>Multimodal Shopify AI Tool</h3>
-            <p><em>Independent Project • 2025</em></p>
-            <ul>
-                <li>Streamlit app leveraging Groq/OpenAI vision models (llama-3.2-90b-vision) to generate product descriptions from uploaded images/text.</li>
-                <li>Deployed on Streamlit Cloud for user-friendly interaction.</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h3>Mixture-of-Experts Model Deployment</h3>
-            <p><em>Independent Sprint • 2025</em></p>
-            <ul>
-                <li>Fine-tuned and deployed MoE architecture on Hugging Face for efficient edge inference.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="section">
+    <!-- Work Experience -->
+    <div class="project">
         <h2>Work Experience</h2>
         <h3>Graduate Engineer Trainee</h3>
         <p><em>Psiog • 2025 – Present</em></p>
@@ -209,11 +228,11 @@
         </ul>
     </div>
 
-    <div class="section">
+    <!-- Education -->
+    <div class="project">
         <h2>Education</h2>
         <h3>Bachelor of Engineering in Electronics and Communications Engineering</h3>
         <p><em>Sri Krishna College of Engineering and Technology, Coimbatore • 2021 – 2025</em></p>
-
         <h3>Self-Taught AI & Systems Development</h3>
         <p><em>2025 – Present</em></p>
         <ul>
@@ -221,7 +240,8 @@
         </ul>
     </div>
 
-    <div class="section">
+    <!-- Languages -->
+    <div class="project">
         <h2>Languages</h2>
         <p>Tamil (Native) • English (Fluent) • Hindi • Marathi • French</p>
     </div>
