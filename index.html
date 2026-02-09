@@ -30,7 +30,7 @@
             color: #34495e;
             border-bottom: 2px solid #3498db;
             padding-bottom: 8px;
-            margin-top: 0px;
+            margin-top: 30px;
         }
         h3 {
             font-size: 20px;
@@ -63,11 +63,6 @@
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        .project img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin: 15px 0;
-        }
         .links {
             margin-top: 10px;
             font-size: 15px;
@@ -86,13 +81,33 @@
         </p>
     </header>
 
-    <!-- Summary Section -->
+    <!-- Summary -->
     <div class="project">
         <h2>Summary</h2>
-        <p>Self-taught AI builder focused on agentic systems, mechanistic interpretability, and <strong>AI safety</strong>. Mastered skills via rapid prototyping with Grok (xAI). Co-authored <strong>TrustNet</strong> (Apart Defensive Acceleration Hackathon, Nov 2025) — decentralized trust framework using credential proofs, Ethereum vouching, temporal decay, and EigenTrust; achieved <strong>282× trust separation</strong> (legit 22.56% vs Sybils 0.08%), raising attack costs >$100k. Discovered and steered a linear therapeutic empathy circuit in Qwen2.5-7B-Instruct (<strong>probe accuracy 1.000</strong>, full flip at ≥10× vector strength) for Neel Nanda's MATS 10.0. Co-authored <strong>AI Swarms Manipulation</strong> (Apart AI Manipulation Hackathon, Jan 2026) — OASIS sim showed single GPT-4o infiltrator reaching <strong>93% belief adoption</strong> in 15-agent Gemini community; pre-seeded dissenters reversed manipulation as "antibodies." Passionate about fast, original contributions to safe AGI.</p>
+        <p>I'm a self-taught AI engineer from Chennai who spends most weekends locked in my room trying to turn wild ideas into working code — usually with Grok (xAI) as my only real teammate. The journey hasn't been smooth: lots of 3 a.m. debugging sessions, staring at broken chains or vanishing gradients, and the quiet thrill when something finally clicks after hours of fighting it alone.</p>
+        <p>Over the last few months I've gone from building decentralized trust systems (TrustNet, Nov 2025), to simulating how sneaky AI agents can quietly shift entire group beliefs (Jan 2026), to reverse-engineering actual empathy circuits inside large models (MATS 10.0, Jan 2026), and most recently shipping Attested Logs (Feb 2026) — a tamper-evident logging layer that gives multi-agent conversations their own cryptographic black box. Every project taught me something hard but useful: how to make systems that can actually prove what happened, how agents influence each other at scale, how tiny circuits control big behaviors, and why verifiable records matter when things go wrong.</p>
+        <p>What keeps me going is the same thing that keeps most of us in this field up late — the hope that if we build the right tools now (provable logs, interpretable circuits, resilient coordination), we can help make future AGI safer and more accountable for everyone. Still very much learning, still making lots of mistakes, but excited to keep shipping.</p>
     </div>
 
     <h2>Projects</h2>
+
+    <!-- Attested Logs -->
+    <div class="project">
+        <h3>Attested Logs: Tamper-Evident Black Box for Multi-Agent AI Conversations</h3>
+        <p><em>Apart Research Technical AI Governance Challenge • Jan 30–Feb 1, 2026</em></p>
+        <ul>
+            <li>Led full implementation of an open-source Python library for cryptographically attested logging of AI agent interactions — each message signed with Ed25519 by its agent, hash-chained (SHA-256 prev_hash), and anchored to trusted organizational public keys for offline verification of integrity, authenticity, and ordering.</li>
+            <li>Built core from scratch over an intense solo weekend: frozen dataclasses (Message, Proof, Certificate), key generation/signing, RFC 8785 deterministic JSON canonicalization, domain-separated hashing, linear chain logic, and offline LogVerifier.</li>
+            <li>Integrated with AutoGen (manual hooks) and LangGraph (callback handler); delivered runnable demos using real GPT-4o-mini conversations showing end-to-end signing, verification, and reliable tamper detection (signature and hash failures caught across chains of 2–4 messages).</li>
+            <li>Augments ECMA-430 (NLIP) multimodal message envelopes with embedded proofs and chain links — creates self-contained, forensic-grade audit trails for AI incidents (airplane black box parallel), EU AI Act compliance, and cross-organizational trust in high-stakes agent systems.</li>
+            <li>20+ passing pytest cases covering crypto, chain integrity, cert handling, and tamper injection; MIT licensed, actively developed repo.</li>
+        </ul>
+        <p class="links">
+            Repo → <a href="https://github.com/Krakalus/apart_attested_agents">github.com/Krakalus/apart_attested_agents</a><br>
+            Apart Research Project Page → <a href="https://apartresearch.com/project/attested-multiagent-conversation-logs-a-tamperevident-black-box-for-ai-governance-du9i">apartresearch.com/...-du9i</a><br>
+            Full Technical Report → <a href="https://docs.google.com/viewerng/viewer?url=https://framerforms.s3.us-east-1.amazonaws.com/form-uploads/554a6703-fac0-4715-84a6-d6613c72cda3-Attested-Multi-Agent-Conversation-Logs.pdf">Paper</a>
+        </p>
+    </div>
 
     <!-- MATS PROJECT -->
     <div class="project">
@@ -111,7 +126,7 @@
         </p>
     </div>
 
-    <!-- AI SWARMS MANIPULATION PROJECT -->
+    <!-- AI Swarms Manipulation -->
     <div class="project">
         <h3>AI Swarms Manipulation: How Coordinated Infiltrator Agents Shift Community Beliefs</h3>
         <p><em>Apart Research AI Manipulation Hackathon • Jan 2026</em></p>
@@ -127,7 +142,7 @@
         </p>
     </div>
 
-    <!-- TrustNet Project -->
+    <!-- TrustNet -->
     <div class="project">
         <h3>TrustNet: Multi-Dimensional Trust for Misinformation Resistance</h3>
         <p><em>Apart Research Defensive Acceleration Hackathon • Nov 2025</em></p>
@@ -189,56 +204,55 @@
         </ul>
     </div>
 
-    <!-- Updated Skills Section -->
+    <!-- Updated Skills – holistic view -->
     <div class="project">
         <h2>Skills</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
             <div>
-                <h3>AI & Agentic Systems</h3>
+                <h3>AI Agents & Distributed Systems</h3>
                 <ul>
-                    <li>Python (Advanced)</li>
-                    <li>Multi-Agent Systems & Simulations (OASIS, GPT-4o + Gemini 2.0 Flash)</li>
-                    <li>LangChain • LangGraph • CrewAI</li>
-                    <li>Agentic Prototyping & Autonomous Agents</li>
-                    <li>Groq/OpenAI APIs (incl. Vision Models: llama-3.2-90b-vision)</li>
-                    <li>PyTorch • transformer-lens (Mechanistic Interpretability)</li>
-                    <li>Linear Probes • Steering Vectors • Activation Patching</li>
+                    <li>Multi-Agent Frameworks: LangGraph, AutoGen, CrewAI, OASIS simulation</li>
+                    <li>Autonomous / Agentic Prototyping (rapid weekend builds)</li>
+                    <li>Groq / OpenAI / Gemini APIs (text + vision)</li>
+                    <li>Tamper-Evident Logging & Provenance (Ed25519, SHA-256 chains, NLIP augmentation)</li>
+                    <li>Decentralized Trust & Reputation (EigenTrust, temporal decay, credential proofs)</li>
                 </ul>
             </div>
             <div>
-                <h3>AI Safety & Manipulation Research</h3>
+                <h3>Mechanistic Interpretability & Safety</h3>
                 <ul>
-                    <li>AI Influence Operations & Swarm Threats</li>
-                    <li>Sybil Resistance • Multi-Dimensional Trust (EigenTrust)</li>
-                    <li>Misinformation Resistance & Belief Dynamics</li>
-                    <li>SQLite3 Database Analysis & Visualization Extraction</li>
-                    <li>Network Simulations • Social Graph Mapping</li>
-                    <li>Guardrails • Evaluations • Persuasion Risk Assessment</li>
+                    <li>Transformer-lens, linear probes, steering vectors, activation patching</li>
+                    <li>Circuit discovery (empathy / Theory of Mind sub-circuits)</li>
+                    <li>AI influence operations & swarm manipulation research</li>
+                    <li>Belief dynamics, reactance, polarization modeling</li>
+                    <li>AI governance tooling (forensics, compliance, black-box auditing)</li>
                 </ul>
             </div>
             <div>
-                <h3>Decentralized & Web3 Systems</h3>
+                <h3>Cryptography & Web3</h3>
                 <ul>
-                    <li>Ethereum (EIP-191, ECDSA Signatures)</li>
-                    <li>Aqua Protocol (KYC/Provenance Proofs)</li>
-                    <li>C2PA • Temporal Decay • Web of Trust Models</li>
+                    <li>Ed25519 signing, SHA-256 with domain separation, RFC 8785 JCS</li>
+                    <li>Lightweight PKI / CA-style key vouching</li>
+                    <li>Ethereum EIP-191, ECDSA, Aqua Protocol proofs</li>
+                    <li>C2PA-style provenance patterns, EigenTrust variants</li>
                 </ul>
             </div>
             <div>
                 <h3>Development & Deployment</h3>
                 <ul>
-                    <li>JavaScript/Node.js • React • Streamlit</li>
-                    <li>AWS (SageMaker) • Hugging Face • Modal Notebooks</li>
-                    <li>FAISS • Retrieval-Augmented Generation (RAG)</li>
-                    <li>MySQL • API Integrations • Browser Game Dev (P5.js-like)</li>
+                    <li>Python (advanced), Poetry, pytest</li>
+                    <li>JavaScript/Node.js, React, Streamlit, P5.js-style games</li>
+                    <li>AWS SageMaker, Hugging Face, Modal notebooks</li>
+                    <li>FAISS RAG, SQLite3 analysis & visualization</li>
+                    <li>GitHub Pages / Itch.io deployment</li>
                 </ul>
             </div>
             <div>
-                <h3>Fundamentals</h3>
+                <h3>Foundations</h3>
                 <ul>
-                    <li>Linear Algebra • Probability & Statistics</li>
-                    <li>Data Structures & Algorithms (Java/C++)</li>
-                    <li>Competitive Programming Mindset</li>
+                    <li>Linear Algebra & Probability (probe / vector math)</li>
+                    <li>Data Structures & Algorithms (C++/Java background)</li>
+                    <li>Competitive programming mindset</li>
                 </ul>
             </div>
         </div>
